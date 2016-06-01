@@ -1,0 +1,50 @@
+body{background:#864201}
+.signIn-but{width:100%;} 
+.coconut{width:724px; height:600px; 
+         background:url(../images/robot.png);
+         position: absolute;
+         top:70px;right:30px;}
+.coconut-anite{animation:aniTwo .5s;}        
+.coconut-qipao{width:200px; height:174px;background:url(../images/qipao.png);
+               position: absolute;
+                top:-10px;right:25px;
+                color:#f12; font-size:18px;
+                font-weight: bold;
+               animation:aniOne .8s ease-in-out infinite;} 
+.coconut-qipao p{width:75%; margin:0 auto; margin-top:50px;text-align: center;}                                    
+.coconut-cancon{width:250px; height:213px; 
+         background:url(../images/coconutCancon.png);
+         position: absolute;
+         bottom:0;left:0;} 
+.coconut-bullet{
+  width:63px; height:56px; 
+         background-image:url(../images/coconutBullet.png);
+         position: fixed;
+         bottom:96px;left:220px;
+} 
+.coconut-form{width:330px; padding:20px 0;
+               margin:205px 0 0 195px;
+              border-radius:10px}                         
+.signIn2-ico{font-size: 16px; color:#985413;}
+
+.coconut-msg{font-size:30px; text-align: center; 
+             width:400px; height:262px;
+             margin:50px;
+             color:#864201 ;
+             background: url(../images/huaban.png)} 
+.coconut-msg p{padding-top: 130px; font-weight: bold;
+               padding-left: 8px;}
+@keyframes aniOne{
+     from {top:0px;}
+      to {top:-10px;}
+}
+
+@keyframes aniTwo{
+     16% {right:0px;}
+     32% {right:30px;}
+     48% {right:0px;}
+     60% {right:30px;}
+     72% {right:0px;}
+     88% {right:30px;}
+     100% {right:0px;}
+}
