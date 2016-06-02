@@ -4,13 +4,13 @@
          this.name=name;
       }
       coconutBullet(father,coconutForm,msg,callBack){
-        var coconutOffset=coconutForm.offset().left;
-        var formgroup1=$(".form-group1").offset().top
-        var coconutHeight=coconutForm.height();
-        var bullet=$("<div class='coconut-bullet'></div>");
-        var coconutQipao=$(".coconut-qipao").children("p").children('span');
-        var bulletWidth=$(".coconut-bullet").width();
-        var windowHeight=$(window).height();
+        let coconutOffset=coconutForm.offset().left;
+        let formgroup1=$(".form-group1").offset().top
+        let coconutHeight=coconutForm.height();
+        let bullet=$("<div class='coconut-bullet'></div>");
+        let coconutQipao=$(".coconut-qipao").children("p").children('span');
+        let bulletWidth=$(".coconut-bullet").width();
+        let windowHeight=$(window).height();
         if($(".coconut-bullet").is(":animated")){
              return false;
         }else{
@@ -26,15 +26,11 @@
       }
      }
       /*椰子子弹构造函数*/
-        var signIn2=function(){
+        let signIn2=function(){
         /*变量*/
-          var coconutClass=new Coconut();
-          var coconut=$(".coconut");
-          var coconutCancon=$('.coconut-cancon');
-          var useName=$("#useName").val();
-          var password=$("#passWord").val();
-          var useReg=/[a-zA-Z0-9]{8,10}/g;
-          var passReg=/[a-zA-Z0-9]{8,10}/g;
+        let [coconutClass,coconut,coconutCancon,useName,password]=[new Coconut(),$(".coconut"),$('.coconut-cancon'),$("#useName").val(),$("#passWord").val()];
+        let useReg=/[a-zA-Z0-9]{8,10}/g;
+        let passReg=/[a-zA-Z0-9]{8,10}/g;
            /*变量*/
           /*逻辑代码*/
           if(useName==''){
